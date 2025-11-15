@@ -1,0 +1,196 @@
+
+/* ======================
+   VARIABLES CSS
+====================== */
+
+:root {
+  /* ----------------------
+     COLORS - PRIMARY
+  ---------------------- */
+  --color-navy-850: hsl(217, 28%, 15%);
+  --color-navy-900: hsl(218, 28%, 13%);
+  --color-navy-950: hsl(216, 53%, 9%);
+  --color-navy-800: hsl(219, 30%, 18%);
+
+  /* ----------------------
+     COLORS - ACCENT
+  ---------------------- */
+  --color-teal-200: hsl(176, 68%, 64%);
+  --color-cyan-500: hsl(198, 60%, 50%);
+
+  /* ----------------------
+     COLORS - NEUTRAL
+  ---------------------- */
+  --color-white: hsl(0, 0%, 100%);
+
+  /* ----------------------
+     TYPOGRAPHY
+  ---------------------- */
+  --font-heading: 'Raleway', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* ----------------------
+     FONT SIZES
+  ---------------------- */
+  --font-size-body: 14px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-size-h1: 2.5vw;
+  --font-size-h2: 1.5vw;
+}
+
+/* ======================
+   RESET DE BASE
+====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======================
+   BODY
+====================== */
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  color: var(--color-white);
+  background-color: var(--color-navy-900);
+}
+
+/* ======================
+   SECTIONS
+====================== */
+
+/* ----- HERO (avec nav) ----- */
+#hero {
+  background-color: var(--color-navy-850);
+  padding: 3vw;
+}
+
+/* Navigation à l’intérieur du hero */
+#hero nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero nav ul{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5vw;
+}
+#hero nav ul li{
+  list-style: none;
+}
+#hero nav ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-family: Open Sans;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body);
+  transition: 0.5s;
+}
+#hero nav ul li a:hover{
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  margin-top: 3vw;
+}
+.hero-img{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: auto;
+}
+.hero-text{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: auto;
+}
+.hero-text h1{
+  font-family: 'Raleway';
+  font-size: var(--font-size-h1);
+  text-align: center;
+}
+.hero-text p {
+  text-align: center;
+  /* font-size: var(--font-body); */
+  font-family: 'Open Sans';
+}
+.btn {
+  background-color: var(--color-cyan-500);
+  color: var(--color-white);
+  width: 15vw;
+  height: 3vw;
+  border-radius: 2vw;
+  border: none;
+  font-size: var(--font-body);
+  transition: 0.5s;
+}
+.btn:hover{
+  background-color: var(--color-teal-200);
+  cursor: pointer;
+}
+
+/* ----- SERVICES ----- */
+#services {
+  background-color: var(--color-navy-900);
+}
+
+/* ----- ABOUT ----- */
+#about {
+  background-color: var(--color-navy-900);
+}
+
+/* ----- TESTIMONIALS ----- */
+#testimonials {
+  background-color: var(--color-navy-800);
+}
+
+/* ----- CONTACT ----- */
+#contact {
+  background-color: var(--color-navy-900);
+}
+
+/* ----- FOOTER ----- */
+#footer {
+  background-color: var(--color-navy-950);
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* ======================
+   MEDIA QUERIES - MOBILE
+====================== */
+@media (max-width: 600px) {
+  body {
+    font-size: 13px;
+  }
+
+  #hero nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #hero,
+  #services,
+  #about,
+  #testimonials,
+  #contact,
+  #footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
