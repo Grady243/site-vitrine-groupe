@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* ======================
    VARIABLES CSS
 ====================== */
+
 :root {
   /* ----------------------
      COLORS - PRIMARY
@@ -61,6 +66,7 @@ body {
 /* ----- HERO (avec nav) ----- */
 #hero {
   background-color: var(--color-navy-850);
+  padding: 5vw;
 }
 
 /* Navigation à l’intérieur du hero */
@@ -68,6 +74,27 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#hero nav ul{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5vw;
+}
+#hero nav ul li{
+  list-style: none;
+}
+#hero nav ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-family: Open Sans;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body);
+}
+#hero nav ul li a:hover{
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
 }
 
 /* ----- SERVICES ----- */
