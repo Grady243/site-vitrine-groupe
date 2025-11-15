@@ -1,0 +1,122 @@
+/* ======================
+   VARIABLES CSS
+====================== */
+:root {
+  /* ----------------------
+     COLORS - PRIMARY
+  ---------------------- */
+  --color-navy-850: hsl(217, 28%, 15%);
+  --color-navy-900: hsl(218, 28%, 13%);
+  --color-navy-950: hsl(216, 53%, 9%);
+  --color-navy-800: hsl(219, 30%, 18%);
+
+  /* ----------------------
+     COLORS - ACCENT
+  ---------------------- */
+  --color-teal-200: hsl(176, 68%, 64%);
+  --color-cyan-500: hsl(198, 60%, 50%);
+
+  /* ----------------------
+     COLORS - NEUTRAL
+  ---------------------- */
+  --color-white: hsl(0, 0%, 100%);
+
+  /* ----------------------
+     TYPOGRAPHY
+  ---------------------- */
+  --font-heading: 'Raleway', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* ----------------------
+     FONT SIZES
+  ---------------------- */
+  --font-size-body: 14px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+/* ======================
+   RESET DE BASE
+====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======================
+   BODY
+====================== */
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  color: var(--color-white);
+  background-color: var(--color-navy-900);
+}
+
+/* ======================
+   SECTIONS
+====================== */
+
+/* ----- HERO (avec nav) ----- */
+#hero {
+  background-color: var(--color-navy-850);
+}
+
+/* Navigation à l’intérieur du hero */
+#hero nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ----- SERVICES ----- */
+#services {
+  background-color: var(--color-navy-900);
+}
+
+/* ----- ABOUT ----- */
+#about {
+  background-color: var(--color-navy-900);
+}
+
+/* ----- TESTIMONIALS ----- */
+#testimonials {
+  background-color: var(--color-navy-800);
+}
+
+/* ----- CONTACT ----- */
+#contact {
+  background-color: var(--color-navy-900);
+}
+
+/* ----- FOOTER ----- */
+#footer {
+  background-color: var(--color-navy-950);
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* ======================
+   MEDIA QUERIES - MOBILE
+====================== */
+@media (max-width: 600px) {
+  body {
+    font-size: 13px;
+  }
+
+  #hero nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #hero,
+  #services,
+  #about,
+  #testimonials,
+  #contact,
+  #footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
