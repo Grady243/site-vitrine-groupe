@@ -160,31 +160,127 @@ body {
 
 /* ----- TESTIMONIALS ----- */
 #testimonials {
-  background-color: var(--color-navy-800);
-  border: 1px solid red;
-  padding: 3vw;
+  background-color: var(--color-navy-900);
+  padding: 2vw;
 }
 
-.container_testimonials{
-  border: 1px solid rgb(9, 50, 233);
+.testimonials .container {
+  background-color: var(--color-navy-900);
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3vw;
-  padding: 3vw;
+  padding: 20px;
 }
-.cart_testmonials{
-  border: 1px solid rgb(255, 0, 136);
+
+.testimonials .container .bg-quotes{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.testimonials .card {
+  background-color: var(--color-navy-850);
+  padding: 40px;
+  margin: 20px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+
+}
+
+.testimonials .card .card_footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
+  padding-top: 20px;
+}
+
+.testimonials .card .card_footer .info h3{
+  font-weight: var(--font-weight-bold);
+}
+
+.testimonials .card p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.testimonials .card .card_footer .img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.testimonials .card .card_footer .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ----- CONTACT ----- */
 #contact {
   background-color: var(--color-navy-900);
+  justify-content: center;
+  text-align: center;
+  padding: 2vw;
+}
+
+.contact .container {
+  width: 60vw;
+  height: auto;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--font-size-h2);
+  margin-bottom: 1vw;
+}
+
+#contact p {
+  width: 40vw;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--font-body);
+}
+
+.form_contact{
+  margin-top: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.form_contact input[type="email"]{
+  width: 25vw;
+  height: 3vw;
+  border-radius: 2vw;
+  border: none;
+  padding: 0 1vw;
+  font-size: var(--font-body);
+}
+
+.btn {
+  background-color: var(--color-cyan-500);
+  color: var(--color-white);
+  width: 15vw;
+  height: 3vw;
+  border-radius: 2vw;
+  border: none;
+  font-size: var(--font-body);
+  transition: 0.5s;
+}
+.btn:hover{
+  background-color: var(--color-teal-200);
+  cursor: pointer;
 }
 
 /* ----- FOOTER ----- */
@@ -228,12 +324,73 @@ body {
   border-radius: 10vw;
   font-size: 5vw;
   }
-
-  #hero,
   #services,
   #about,
-  #testimonials,
+ #testimonials{
+   }
+  .container {
+    background-color: var(--color-navy-900);
+    position: relative;
+    display: flex;
+    padding: 20px;
+  } 
+
+  .testimonials .container {
+    background-color: var(--color-navy-900);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .testimonials .card {
+    background-color: var(--color-navy-850);
+    padding: 40px;
+    margin: 20px;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .btn {
+  width: 95vw;
+  height: 15vw;
+  border-radius: 10vw;
+  font-size: 5vw;
+  }
+ 
   #contact,
+  .contact .container {
+  width: 100vw;
+  height: auto;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+  .contact h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--font-size-h2);
+    margin-bottom: 1vw;
+  }
+
+  #contact p {
+    width: 90vw;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-body);
+  }
+
+  .form_contact{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+  }
   #footer {
     padding-left: 15px;
     padding-right: 15px;
