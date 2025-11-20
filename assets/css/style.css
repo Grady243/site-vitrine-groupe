@@ -64,7 +64,8 @@ body {
 /* ----- HERO (avec nav) ----- */
 #hero {
   background-color: var(--color-navy-850);
-  padding: 3vw;
+  padding: ;
+  
 }
 
 /* Navigation à l’intérieur du hero */
@@ -149,12 +150,133 @@ body {
 
 /* ----- SERVICES ----- */
 #services {
+  display: flex;
   background-color: var(--color-navy-900);
-}
+  width: 100%;
+  padding: 60px 0;
+  justify-content: center;
+  align-items: center;
+
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+   }
+
+    .container div {
+      width: 45%;
+      min-width: 250px;
+      padding: 20px 25px;
+      text-align: center;
+    } 
+    
+    .container div h1 {
+      font-size: var(--font-size-h2);
+    }
+
+    
+    #services img {
+      width: 70px;
+      margin-bottom: 10px;
+    }
+
+    #services p {
+      font-size: var(--font-size-h2);
+      color: var(--color-white);
+      align-items: 1.5;
+    }
+
+    @media  (max-width: 900px) {
+         #service .container div {
+          
+           flex: 1 1 45%;
+         }
+    }
+       
+        
+      }
+
+      @media (max-width: 600px) {
+            #service .container div {
+              
+               flex: 1 1 100%;
+            }
+            
+      }
+             
+        
+      
+      
+    
+      
+
+  
+
+
+
+
+
+  
+
+  
+
+
+
+
 
 /* ----- ABOUT ----- */
 #about {
   background-color: var(--color-navy-900);
+  padding: 80px 10%;
+
+  .container__ME {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .container__ME .left img {
+      width: 400px;
+      height: 300px;
+    }
+
+    .container__ME .reight h1 {
+      font-size: var(--font-size-h2);
+      margin-bottom: 10px;
+    }
+    .container__ME .reight p {
+      color: var(--color-white);
+      margin-bottom: 10px;
+      a {
+        color: blueviolet;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+
+  
+    @media  (max-width: 900px) {
+         #about .container div {
+          
+           flex: 1 1 45%;
+         }
+    }
+       
+        
+      }
+
+      @media (max-width: 600px) {
+            #about .container div {
+              
+               flex: 1 1 100%;
+            }
 }
 
 /* ----- TESTIMONIALS ----- */
