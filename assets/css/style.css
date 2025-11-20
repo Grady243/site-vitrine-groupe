@@ -1,4 +1,3 @@
-
 /* ======================
    VARIABLES CSS
 ====================== */
@@ -26,8 +25,8 @@
   /* ----------------------
      TYPOGRAPHY
   ---------------------- */
-  --font-heading: 'Raleway', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
+  --font-heading: "Raleway", sans-serif;
+  --font-body: "Open Sans", sans-serif;
 
   /* ----------------------
      FONT SIZES
@@ -75,17 +74,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.logo{
+.logo {
   width: 15vw;
 }
-#hero nav ul{
+#hero nav ul {
   width: 40%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 5vw;
 }
-#hero nav ul li{
+#hero nav ul li {
   list-style: none;
 }
 #hero nav ul li a {
@@ -96,11 +95,11 @@ body {
   font-size: var(--font-size-body);
   transition: 0.5s;
 }
-#hero nav ul li a:hover{
+#hero nav ul li a:hover {
   text-decoration: underline;
   font-weight: var(--font-weight-bold);
 }
-.hero-content{
+.hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,13 +107,13 @@ body {
   gap: 2vw;
   margin-top: 3vw;
 }
-.hero-img{
+.hero-img {
   width: 80%;
   display: flex;
   justify-content: center;
   padding: auto;
 }
-.hero-text{
+.hero-text {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -123,16 +122,16 @@ body {
   gap: 2vw;
   padding: auto;
 }
-.hero-text h1{
+.hero-text h1 {
   width: 50vw;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: var(--font-size-h1);
   text-align: center;
 }
 .hero-text p {
   width: 30vw;
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 .btn {
   background-color: var(--color-cyan-500);
@@ -144,7 +143,7 @@ body {
   font-size: var(--font-body);
   transition: 0.5s;
 }
-.btn:hover{
+.btn:hover {
   background-color: var(--color-teal-200);
   cursor: pointer;
 }
@@ -282,12 +281,126 @@ body {
 
 /* ----- TESTIMONIALS ----- */
 #testimonials {
-  background-color: var(--color-navy-800);
+  background-color: var(--color-navy-900);
+  padding: 2vw;
+}
+
+.testimonials .container {
+  background-color: var(--color-navy-900);
+  position: relative;
+  display: flex;
+  padding: 20px;
+}
+
+.testimonials .container .bg-quotes {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.testimonials .card {
+  background-color: var(--color-navy-850);
+  padding: 40px;
+  margin: 20px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.testimonials .card .card_footer {
+  display: flex;
+  padding-top: 20px;
+}
+
+.testimonials .card .card_footer .info h3 {
+  font-weight: var(--font-weight-bold);
+}
+
+.testimonials .card p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.testimonials .card .card_footer .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.testimonials .card .card_footer .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ----- CONTACT ----- */
 #contact {
   background-color: var(--color-navy-900);
+  justify-content: center;
+  text-align: center;
+  padding: 2vw;
+}
+
+.contact .container {
+  width: 60vw;
+  height: auto;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--font-size-h2);
+  margin-bottom: 1vw;
+}
+
+#contact p {
+  width: 40vw;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--font-body);
+}
+
+.form_contact {
+  margin-top: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.form_contact input[type="email"] {
+  width: 25vw;
+  height: 3vw;
+  border-radius: 2vw;
+  border: none;
+  padding: 0 1vw;
+  font-size: var(--font-body);
+}
+
+.btn {
+  background-color: var(--color-cyan-500);
+  color: var(--color-white);
+  width: 15vw;
+  height: 3vw;
+  border-radius: 2vw;
+  border: none;
+  font-size: var(--font-body);
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: var(--color-teal-200);
+  cursor: pointer;
 }
 
 /* ----- FOOTER ----- */
@@ -296,11 +409,124 @@ body {
   text-align: center;
   padding: 30px 0;
 }
+.footer {
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-logo img {
+  padding: 30px 80px;
+}
+.footer-logo {
+  padding-top: 100px;
+}
+
+.footer .container {
+  padding: 20px 80px;
+  padding-left: 0%;
+  margin-left: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.location-info {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.location-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.location-item p {
+  margin: 0;
+  line-height: 1.6;
+  color: #c0c0c0;
+  max-width: 300px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item a {
+  color: #c0c0c0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  transform: scale(1.3);
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #c0c0c0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  transform: scale(1.3);
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: var(--color-white);
+  border: 2px solid #c0c0c0;
+  border-radius: 50px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--color-cyan-500);
+  border-color: var(--color-cyan-500);
+}
 
 /* ======================
    MEDIA QUERIES - MOBILE
 ====================== */
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
   body {
     font-size: 13px;
   }
@@ -308,37 +534,110 @@ body {
   #hero {
     height: auto;
   }
-  .hero-text{
+  .hero-text {
     width: 100%;
     gap: 10vw;
   }
-  .hero-text h1{
+  .hero-text h1 {
     width: 100vw;
     font-size: 35px;
     line-height: 1.6;
   }
-   .hero-text p{
+  .hero-text p {
     width: 100vw;
     font-size: 20px;
     line-height: 1.6;
   }
-  .logo{
-  width: 40vw;
+  .logo {
+    width: 40vw;
   }
   .btn {
-  width: 95vw;
-  height: 15vw;
-  border-radius: 10vw;
-  font-size: 5vw;
+    width: 95vw;
+    height: 15vw;
+    border-radius: 10vw;
+    font-size: 5vw;
   }
 
-  #hero,
+  #testimonials {
+  }
+  .container {
+    background-color: var(--color-navy-900);
+    position: relative;
+    display: flex;
+    padding: 20px;
+  }
+
+  .testimonials .container {
+    background-color: var(--color-navy-900);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .testimonials .card {
+    background-color: var(--color-navy-850);
+    padding: 40px;
+    margin: 20px;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .btn {
+    width: 95vw;
+    height: 15vw;
+    border-radius: 10vw;
+    font-size: 5vw;
+  }
+
   #services,
   #about,
-  #testimonials,
   #contact,
+  .contact .container {
+    width: 100vw;
+    height: auto;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .contact h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: var(--font-size-h2);
+    margin-bottom: 1vw;
+  }
+  #contact p {
+    width: 90vw;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--font-body);
+  }
+  .form_contact {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+  }
   #footer {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    min-width: 100%;
+    text-align: center;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .footer-logo img {
+    margin-bottom: 20px;
   }
 }
